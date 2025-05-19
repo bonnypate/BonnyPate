@@ -5,70 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Bonny pâte</title>
   <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #fff8f0;
-      color: #333;
-    }
-    header {
-      background-color: #d35400;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    nav {
-      text-align: center;
-      margin-top: 10px;
-    }
-    nav a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: #d35400;
-      font-weight: bold;
-    }
-    section {
-      padding: 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
-    section h2 {
-      border-bottom: 2px solid #d35400;
-      padding-bottom: 5px;
-    }
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 15px;
-    }
-    .card {
-      background: white;
-      border-radius: 10px;
-      padding: 10px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      text-align: center;
-    }
-    .card h3 {
-      margin: 10px 0 5px;
-    }
-    .img-placeholder {
-      width: 100%;
-      height: 150px;
-      background: #eee;
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #999;
-    }
-    footer {
-      background-color: #d35400;
-      color: white;
-      text-align: center;
-      padding: 10px;
-      margin-top: 20px;
-    }
+    body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background: #fff8f0; color: #333; }
+    header { background-color: #d35400; color: white; padding: 20px; text-align: center; }
+    nav { text-align: center; margin-top: 10px; }
+    nav a { margin: 0 10px; text-decoration: none; color: #d35400; font-weight: bold; }
+    section { padding: 20px; max-width: 1100px; margin: auto; }
+    section h2 { border-bottom: 2px solid #d35400; padding-bottom: 5px; margin-bottom: 15px; }
+    .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; }
+    .card { background: white; border-radius: 10px; padding: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center; }
+    .card h3 { margin: 10px 0 5px; }
+    .img-placeholder { width: 100%; height: 150px; background: #eee; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #999; }
+    footer { background-color: #d35400; color: white; text-align: center; padding: 10px; margin-top: 20px; }
   </style>
 </head>
 <body>
@@ -81,21 +28,57 @@
     <a href="#contact">تواصل معنا</a>
   </nav>
 
-  <!-- فئة بسبوسة -->
+  <!-- جاتوه -->
+  <section>
+    <h2>جاتوه</h2>
+    <div class="products">
+      <div class="card"><div class="img-placeholder">صورة</div><h3>جاتوه لوكس</h3><p>السعر: ....</p></div>
+      <div class="card"><div class="img-placeholder">صورة</div><h3>جاتوه سوبر لوكس</h3><p>السعر: ....</p></div>
+      <div class="card"><div class="img-placeholder">صورة</div><h3>جاتوه اسپشيال تحضير</h3><p>السعر: ....</p></div>
+    </div>
+  </section>
+
+  <!-- بسبوسة -->
   <section>
     <h2>بسبوسة</h2>
     <div class="products">
-      <div class="card">
-        <div class="img-placeholder">صورة</div>
-        <h3>بسبوسة سادة</h3>
-        <p>السعر: ..... جنيه</p>
-      </div>
-      <div class="card">
-        <div class="img-placeholder">صورة</div>
-        <h3>بسبوسة محشية</h3>
-        <p>السعر: ..... جنيه</p>
-      </div>
-      <!-- تقدر تضيف باقي المنتجات بنفس الشكل ده -->
+      <div class="card"><div class="img-placeholder">صورة</div><h3>بسبوسة سادة</h3><p>السعر: ....</p></div>
+      <div class="card"><div class="img-placeholder">صورة</div><h3>بسبوسة محشية</h3><p>السعر: ....</p></div>
+      <div class="card"><div class="img-placeholder">صورة</div><h3>بسبوسة بندق</h3><p>السعر: ....</p></div>
+      <div class="card"><div class="img-placeholder">صورة</div><h3>بسبوسة فستق</h3><p>السعر: ....</p></div>
+      <div class="card"><div class="img-placeholder">صورة</div><h3>بسبوسة كريمة</h3><p>السعر: ....</p></div>
+      <div class="card"><div class="img-placeholder">صورة</div><h3>بسبوسة شوكولاته</h3><p>السعر: ....</p></div>
+      <div class="card"><div class="img-placeholder">صورة</div><h3>بسبوسة نوتيلا</h3><p>السعر: ....</p></div>
+      <div class="card"><div class="img-placeholder">صورة</div><h3>بسبوسة سعودي سادة</h3><p>السعر: ....</p></div>
+      <div class="card"><div class="img-placeholder">صورة</div><h3>بسبوسة سعودي لوتس</h3><p>السعر: ....</p></div>
+      <div class="card"><div class="img-placeholder">صورة</div><h3>بسبوسة سعودي نوتيلا</h3><p>السعر: ....</p></div>
+    </div>
+  </section>
+
+  <!-- تورت -->
+  <section>
+    <h2>تورت</h2>
+    <div class="products">
+      <div class="card"><div class="img-placeholder">صورة</div><h3>مدور مقاس 18</h3><p>السعر: ....</p></div>
+      <div class="card"><div class="img-placeholder">صورة</div><h3>مدور مقاس 20</h3><p>السعر: ....</p></div>
+      <div class="card"><div class="img-placeholder">صورة</div><h3>مدور مقاس 22</h3><p>السعر: ....</p></div>
+      <div class="card"><div class="img-placeholder">صورة</div><h3>مدور مقاس 24</h3><p>السعر: ....</p></div>
+      <div class="card"><div class="img-placeholder">صورة</div><h3>مدور مقاس 26</h3><p>السعر: ....</p></div>
+      <div class="card"><div class="img-placeholder">صورة</div><h3>مدور مقاس 28</h3><p>السعر: ....</p></div>
+      <div class="card"><div class="img-placeholder">صورة</div><h3>مدور مقاس 30</h3><p>السعر: ....</p></div>
+      <div class="card"><div class="img-placeholder">صورة</div><h3>مربع 20×20</h3><p>السعر: ....</p></div>
+      <div class="card"><div class="img-placeholder">صورة</div><h3>مربع 25×25</h3><p>السعر: ....</p></div>
+      <div class="card"><div class="img-placeholder">صورة</div><h3>مقاس 20×30</h3><p>السعر: ....</p></div>
+      <div class="card"><div class="img-placeholder">صورة</div><h3>قلبين</h3><p>السعر: ....</p></div>
+      <div class="card"><div class="img-placeholder">صورة</div><h3>قلب كبير</h3><p>السعر: ....</p></div>
+      <div class="card"><div class="img-placeholder">صورة</div><h3>قلب وسط</h3><p>السعر: ....</p></div>
+      <div class="card"><div class="img-placeholder">صورة</div><h3>قلب صغير</h3><p>السعر: ....</p></div>
+      <div class="card"><div class="img-placeholder">صورة</div><h3>تفاحة كبير</h3><p>السعر: ....</p></div>
+      <div class="card"><div class="img-placeholder">صورة</div><h3>تفاحة وسط</h3><p>السعر: ....</p></div>
+      <div class="card"><div class="img-placeholder">صورة</div><h3>وردة كبيرة</h3><p>السعر: ....</p></div>
+      <div class="card"><div class="img-placeholder">صورة</div><h3>وردة صغيرة</h3><p>السعر: ....</p></div>
+      <div class="card"><div class="img-placeholder">صورة</div><h3>دمعة</h3><p>السعر: ....</p></div>
+      <div class="card"><div class="img-placeholder">صورة</div><h3>بيضاوي</h3><p>السعر: ....</p></div>
     </div>
   </section>
 
