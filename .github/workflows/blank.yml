@@ -1,0 +1,160 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v4
+
+      # Runs a single command using the runners shell
+      - name: Run a one-line script
+        run: echo Hello, world!
+
+      # Runs a set of commands using the runners shell
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bonny pâte</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff8f0;
+      color: #333;
+    }
+    header {
+      background-color: #d35400;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      text-align: center;
+      margin-top: 10px;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #d35400;
+      font-weight: bold;
+    }
+    section {
+      padding: 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    section h2 {
+      border-bottom: 2px solid #d35400;
+      padding-bottom: 5px;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .card h3 {
+      margin: 10px 0 5px;
+    }
+    .img-placeholder {
+      width: 100%;
+      height: 150px;
+      background: #eee;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #999;
+    }
+    footer {
+      background-color: #d35400;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bonny pâte</h1>
+    <p>جميع أنواع الحلويات الشرقية والغربية</p>
+  </header>
+
+  <nav>
+    <a href="#contact">تواصل معنا</a>
+  </nav>
+
+  <!-- فئة بسبوسة -->
+  <section>
+    <h2>بسبوسة</h2>
+    <div class="products">
+      <div class="card">
+        <div class="img-placeholder">صورة</div>
+        <h3>بسبوسة سادة</h3>
+        <p>السعر: ..... جنيه</p>
+      </div>
+      <div class="card">
+        <div class="img-placeholder">صورة</div>
+        <h3>بسبوسة محشية</h3>
+        <p>السعر: ..... جنيه</p>
+      </div>
+      <div class="card">
+        <div class="img-placeholder">صورة</div>
+        <h3>بسبوسة بندق</h3>
+        <p>السعر: ..... جنيه</p>
+      </div>
+      <div class="card">
+        <div class="img-placeholder">صورة</div>
+        <h3>بسبوسة فستق</h3>
+        <p>السعر: ..... جنيه</p>
+      </div>
+      <!-- ممكن تضيف باقي منتجات بسبوسة هنا بنفس الشكل -->
+    </div>
+  </section>
+
+  <!-- قسم تواصل معنا -->
+  <section id="contact">
+    <h2>تواصل معنا</h2>
+    <p>رقم الهاتف: 01050756111</p>
+    <p>رقم الواتساب: 01119804508</p>
+    <p><a href="https://www.facebook.com/share/1BkZ3m9mGk/" target="_blank">صفحتنا على فيسبوك</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Bonny pâte. جميع الحقوق محفوظة.</p>
+  </footer>
+</body>
+</html>
